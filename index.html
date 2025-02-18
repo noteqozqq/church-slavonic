@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Церковнославянский язык</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <style>
         @font-face {
             font-family: 'PonomarUnicode';
@@ -11,455 +12,585 @@
         }
 
         body {
-            font-family: 'PonomarUnicode';
-            padding-left: 128px;
-            padding-right: 128px;
-        }
-
-        .container {
-            padding: 28px;
-            border: 1px #2196f3 solid;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
             font-size: 20px;
         }
 
-        td {
-            padding: 10px;
-            border: 1px solid #000;
+        .main-container {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+            padding: 2em;
         }
 
-        td a {
-            text-decoration: none;
+        .ui.table td {
+            font-family: 'PonomarUnicode';
         }
 
-        h1 a, h3 a {
-            text-decoration: none;
+        .csf {
+            font-family: 'PonomarUnicode' !important;
+            font-size: 22px;
+        }
+
+        .tf {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 style="margin: 0; padding: 0; margin-bottom: 12px;">Церковнославянский язык</h1>
-        <h3 style="margin: 0; padding: 0;">Навигация:</h3>
-        <ul style="margin: 0; padding: 0; padding-left: 24px;">
-            <li><a href="#азбука">Азбука</a></li>
-            <li>
-                <a href="#надстрочные_знаки_и_знаки_препинания">Надстрочные знаки и знаки препинания</a>
-                <ul>
-                    <li><a href="#знаки_ударения">Знаки ударения</a></li>
-                    <li><a href="#знаки_придыхания">Знаки придыхания</a></li>
-                    <li><a href="#знаки_титла">Знаки титла</a></li>
-                    <li><a href="#знаки_препинания">Знаки препинания</a></li>
-                </ul>
-            </li>
-            <li><a href="#цифровые_значения_букв">Цифровые значения букв</a></li>
-        </ul>
-        <h1 id="азбука"><a href="#азбука"># Азбука</a></h1>
-        <hr>
-        <div>
-            <table>
-                <tr>
-                    <th>Буква</th>
-                    <th>Название</th>
-                    <th>Произношение</th>
-                </tr>
-                <tr>
-                    <td><a href="#А">А а</a></td>
-                    <td>Аз</td>
-                    <td>[а]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Б">Б б</a></td>
-                    <td>Буки</td>
-                    <td>[б]</td>
-                </tr>
-                <tr>
-                    <td><a href="#В">В в</a></td>
-                    <td>Веди</td>
-                    <td>[в]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Г">Г г</a></td>
-                    <td>Глаголь</td>
-                    <td>[г]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Д">Д д</a></td>
-                    <td>Добро</td>
-                    <td>[д]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Е">Е е є</a></td>
-                    <td>Ести</td>
-                    <td>[е]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ж">Ж ж</a></td>
-                    <td>Живете</td>
-                    <td>[ж]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѕ">Ѕ ѕ</a></td>
-                    <td>Зело</td>
-                    <td>[з]</td>
-                </tr>
-                <tr>
-                    <td><a href="#З">З з</a></td>
-                    <td>Земля</td>
-                    <td>[з]</td>
-                </tr>
-                <tr>
-                    <td><a href="#И">И и</a></td>
-                    <td>Иже</td>
-                    <td>[и]</td>
-                </tr>
-                <tr>
-                    <td><a href="#І">І ї</a></td>
-                    <td>І</td>
-                    <td>[и]</td>
-                </tr>
-                <tr>
-                    <td><a href="#К">К к</a></td>
-                    <td>Како</td>
-                    <td>[к]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Л">Л л</a></td>
-                    <td>Люди</td>
-                    <td>[л]</td>
-                </tr>
-                <tr>
-                    <td><a href="#М">М м</a></td>
-                    <td>Мыслете</td>
-                    <td>[м]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Н">Н н</a></td>
-                    <td>Наш</td>
-                    <td>[н]</td>
-                </tr>
-                <tr>
-                    <td><a href="#О">О Ѻ ѻ о</a></td>
-                    <td>Он</td>
-                    <td>[о]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѡ">Ѡ, ѡ Ѽ ѽ</a></td>
-                    <td>О (омега)</td>
-                    <td>[о]</td>
-                </tr>
-                <tr>
-                    <td><a href="#П">П п</a></td>
-                    <td>Покой</td>
-                    <td>[п]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Р">Р р</a></td>
-                    <td>Рцы</td>
-                    <td>[р]</td>
-                </tr>
-                <tr>
-                    <td><a href="#С">С с</a></td>
-                    <td>Слово</td>
-                    <td>[с]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Т">Т т</a></td>
-                    <td>Твердо</td>
-                    <td>[т]</td>
-                </tr>
-                <tr>
-                    <td><a href="#У">Ѹ ѹ Ꙋ ꙋ</a></td>
-                    <td>Ук</td>
-                    <td>[у]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ф">Ф ф</a></td>
-                    <td>Ферт</td>
-                    <td>[у]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Х">Х х</a></td>
-                    <td>Хер</td>
-                    <td>[х]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѿ">Ѿ ѿ</a></td>
-                    <td>От</td>
-                    <td>[от]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ц">Ц ц</a></td>
-                    <td>Цы</td>
-                    <td>[ц]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ч">Ч ч</a></td>
-                    <td>Червь</td>
-                    <td>[ч]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ш">Ш ш</a></td>
-                    <td>Ша</td>
-                    <td>[ш]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Щ">Щ щ</a></td>
-                    <td>Ща</td>
-                    <td>[щ]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ъ">Ъ ъ</a></td>
-                    <td>Ер</td>
-                    <td>Означает твердость предыдущего согласного. Иногда заменяется знаком &#11823;, который называется паерок или ерок.</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ы">Ы ы</a></td>
-                    <td>Еры</td>
-                    <td>[ы]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ь">Ь ь</a></td>
-                    <td>Ерь</td>
-                    <td>Означает мягкость предыдущего согласного.</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѣ">Ѣ ѣ</a></td>
-                    <td>Ять</td>
-                    <td>[е]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ю">Ю ю</a></td>
-                    <td>Ю</td>
-                    <td>[ю]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ꙗ">Ꙗ ꙗ</a></td>
-                    <td>Я</td>
-                    <td>[я]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѧ">Ѧ ѧ</a></td>
-                    <td>Малый юс</td>
-                    <td>[я]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѯ">Ѯ ѯ</a></td>
-                    <td>Кси</td>
-                    <td>[кс]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѱ">Ѱ ѱ</a></td>
-                    <td>Пси</td>
-                    <td>[пс]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѳ">Ѳ ѳ</a></td>
-                    <td>Фита</td>
-                    <td>[ф]</td>
-                </tr>
-                <tr>
-                    <td><a href="#Ѵ">Ѵ ѵ</a></td>
-                    <td>Ижица</td>
-                    <td>Формально выбор правильного чтения ижицы определяют надстрочные знаки: если над ижицей стоит придыхание и (или) ударение, то это гласный [и], а если ничего не стоит — то согласный [в]. Для обозначения ижиц, которые надо читать как [и], но которые стоят не в начале слова и не под ударением, используется специальный надстрочный знак — кендема (ѷ), сегодня иногда ошибочно называемый «двойным грависом». Ижица с кендемой отдельной буквой азбуки не является. <cite><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%B6%D0%B8%D1%86%D0%B0">Источник</a></cite></td>
-                </tr>
-            </table>
-
-            <h3>Буквы, вышедшие из употребления:</h3>
-            <ul>
-                <li>Ѫ, ѫ — юс большой;</li>
-                <li>Ѭ, ѭ — юс большой йотированный;</li>
-                <li>Ѩ, ѩ — юс малый йотированный.</li>
-                <p style="font-size: 16px;"><b>Примечание.</b> Юс большой (ѫ) употребляется только в ключе границ Пасхалии, для обозначения празднования Пасхи 24 апреля; юс малый (ѧ), хотя и употребляется, но является лишь разновидностью ꙗ.</p>
-            </ul>
-
-            <h3>По-разному пишутся, но одинаково произносятся следующие буквы и сочетания букв:</h3>
-            <ol>
-                <li>в ѵ</li>
-                <li>Е е є</li>
-                <li>Ѕ З</li>
-                <li>и ї ѷ</li>
-                <li>о ѻ ѡ ѽ</li>
-                <li>ѹ ꙋ</li>
-                <li>ф ѳ</li>
-                <li>ѿ от</li>
-                <li>ꙗ ѧ</li>
-                <li>ѯ кс</li>
-                <li>ѱ пс</li>
-            </ol>
-
-            <p>
-                Церковнославянский алфавит был создан на базе греческого. Этим объясняется наличие ряда букв (ѳ, ѡ, ѯ, ѱ, ѵ), избыточных для передачи славянской речи. Греческим влиянием объясняется и правило,
-                согласно которому сочетание ГГ читается как [нг], а сочетание ГК - как [нк], например: є҆ѵа́ггелїе, сѷгкли́тъ.
-            </p>
+    <div class="ui container main-container">
+        <h1 class="ui header church-slavonic csf">Церковнославянский язык</h1>
+        
+        <div class="ui segment">
+            <h3 class="ui header">Навигация:</h3>
+            <div class="ui list">
+                <div class="item">
+                    <a href="#азбука">- Азбука</a>
+                </div>
+                <div class="item">
+                    <a href="#надстрочные_знаки_и_знаки_препинания">- Надстрочные знаки и знаки препинания</a>
+                    <div class="list">
+                        <div class="item">
+                            <a href="#знаки_ударения">- Знаки ударения</a>
+                        </div>
+                        <div class="item">
+                            <a href="#знаки_придыхания">- Знаки придыхания</a>
+                        </div>
+                        <div class="item">
+                            <a href="#знаки_титла">- Знаки титла</a>
+                        </div>
+                        <div class="item">
+                            <a href="#знаки_препинания">- Знаки препинания</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#цифровые_значения_букв">- Цифровые значения букв</a>
+                </div>
+            </div>
         </div>
 
-        <h1><a id="надстрочные_знаки_и_знаки_препинания" href="#надстрочные_знаки_и_знаки_препинания"># Надстрочные знаки и знаки препинания</a></h1>
-        <hr>
-        <div>
-            <p>В церковнославянском языке используются особые знаки, которые ставятся выше уровня строки и называется надстрочными. Это знаки ударения, особый знак придыхания и знаки сокращения слова. </p>
-            <h3><a id="знаки_ударения" href="#знаки_ударения"># Знаки ударения</a></h3>
-            <p>
-В церковнославянском языке ударение ставится во всех словах за исключением союзов, частиц, большинства предлогов, некоторых форм местоимений (ми, ти, си и др.).<br>
-Ударения бывают: острое (  ́) (или оксия), тяжелое (  ̀) (или вария) и облеченное (  ̑) (или камора). Острое ударение ставится над гласной в начале или середине слова: а҆на́нїѧ, а҆́гг҃лъ. Тяжелое — ставится над гласной в конце слова: распнѝ є҆го̀; но если после слова, оканчивающегося гласной, стоят союзы: же, бо, ли и краткие формы личного местоимения 1-го и 2-го лица: мѝ, тѝ и др., то ставится ударение острое, а местоимение без ударения: спаси́ мѧ.<br>
-Есть несколько местоимений, в которых над гласной, стоящей в начале слова, ставится тяжелое ударение вместе с придыханием для отличия падежей, например: и҆̀же, ꙗ҆̀же и др., и союз ᲂу҆̀бо.<br>
-Облеченное ударение ставится над падежами двойственного и множественного числа, сходными с падежами числа единственного, например: ра́бъ единственного числа и ра̑бъ множественного.
-            </p>
+        <div class="ui segment" id="азбука">
+            <h2 class="ui header">Азбука</h2>
+            <div class="ui divider"></div>
+            
+            <table class="ui celled table" style="font-size: 20px;">
+                <thead>
+                    <tr>
+                        <th>Буква</th>
+                        <th>Название</th>
+                        <th>Произношение</th>
+                    </tr>
+                </thead>
+                <tbody class="csf">
+                    <tr>
+                        <td><a href="#А">А а</a></td>
+                        <td class="tf">Аз</td>
+                        <td>[а]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Б">Б б</a></td>
+                        <td class="tf">Буки</td>
+                        <td>[б]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#В">В в</a></td>
+                        <td class="tf">Веди</td>
+                        <td>[в]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Г">Г г</a></td>
+                        <td class="tf">Глаголь</td>
+                        <td>[г]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Д">Д д</a></td>
+                        <td class="tf">Добро</td>
+                        <td>[д]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Е">Е е є</a></td>
+                        <td class="tf">Ести</td>
+                        <td>[е]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ж">Ж ж</a></td>
+                        <td class="tf">Живете</td>
+                        <td>[ж]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѕ">Ѕ ѕ</a></td>
+                        <td class="tf">Зело</td>
+                        <td>[з]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#З">З з</a></td>
+                        <td class="tf">Земля</td>
+                        <td>[з]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#И">И и</a></td>
+                        <td class="tf">Иже</td>
+                        <td>[и]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#І">І ї</a></td>
+                        <td class="tf">І</td>
+                        <td>[и]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#К">К к</a></td>
+                        <td class="tf">Како</td>
+                        <td>[к]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Л">Л л</a></td>
+                        <td class="tf">Люди</td>
+                        <td>[л]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#М">М м</a></td>
+                        <td class="tf">Мыслете</td>
+                        <td>[м]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Н">Н н</a></td>
+                        <td class="tf">Наш</td>
+                        <td>[н]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#О">О Ѻ ѻ о</a></td>
+                        <td class="tf">Он</td>
+                        <td>[о]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѡ">Ѡ ѡ Ѽ ѽ</a></td>
+                        <td class="tf">О (омега)</td>
+                        <td>[о]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#П">П п</a></td>
+                        <td class="tf">Покой</td>
+                        <td>[п]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Р">Р р</a></td>
+                        <td class="tf">Рцы</td>
+                        <td>[р]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#С">С с</a></td>
+                        <td class="tf">Слово</td>
+                        <td>[с]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Т">Т т</a></td>
+                        <td class="tf">Твердо</td>
+                        <td>[т]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#У">Ѹ ѹ Ꙋ ꙋ</a></td>
+                        <td class="tf">Ук</td>
+                        <td>[у]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ф">Ф ф</a></td>
+                        <td class="tf">Ферт</td>
+                        <td>[ф]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Х">Х х</a></td>
+                        <td class="tf">Хер</td>
+                        <td>[х]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѿ">Ѿ ѿ</a></td>
+                        <td class="tf">От</td>
+                        <td>[от]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ц">Ц ц</a></td>
+                        <td class="tf">Цы</td>
+                        <td>[ц]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ч">Ч ч</a></td>
+                        <td class="tf">Червь</td>
+                        <td>[ч]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ш">Ш ш</a></td>
+                        <td class="tf">Ша</td>
+                        <td>[ш]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Щ">Щ щ</a></td>
+                        <td class="tf">Ща</td>
+                        <td>[щ]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ъ">Ъ ъ</a></td>
+                        <td class="tf">Ер</td>
+                        <td class="tf">Означает твердость предыдущего согласного</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ы">Ы ы</a></td>
+                        <td class="tf">Еры</td>
+                        <td>[ы]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ь">Ь ь</a></td>
+                        <td class="tf">Ерь</td>
+                        <td class="tf">Означает мягкость предыдущего согласного</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѣ">Ѣ ѣ</a></td>
+                        <td class="tf">Ять</td>
+                        <td>[е]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ю">Ю ю</a></td>
+                        <td class="tf">Ю</td>
+                        <td>[ю]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ꙗ">Ꙗ ꙗ</a></td>
+                        <td class="tf">Я</td>
+                        <td>[я]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѧ">Ѧ ѧ</a></td>
+                        <td class="tf">Малый юс</td>
+                        <td>[я]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѯ">Ѯ ѯ</a></td>
+                        <td class="tf">Кси</td>
+                        <td>[кс]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѱ">Ѱ ѱ</a></td>
+                        <td class="tf">Пси</td>
+                        <td>[пс]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѳ">Ѳ ѳ</a></td>
+                        <td class="tf">Фита</td>
+                        <td>[ф]</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Ѵ">Ѵ ѵ</a></td>
+                        <td class="tf">Ижица</td>
+                        <td class="tf" style="font-size: 16px;">Формально выбор правильного чтения ижицы определяют надстрочные знаки: если над ижицей стоит придыхание и (или) ударение, то это гласный [и], а если ничего не стоит — то согласный [в]. Для обозначения ижиц, которые надо читать как [и], но которые стоят не в начале слова и не под ударением, используется специальный надстрочный знак — кендема (<span class="csf">ѷ</span>), сегодня иногда ошибочно называемый «двойным грависом». Ижица с кендемой отдельной буквой азбуки не является.</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <h3><a id="знаки_придыхания" href="#знаки_придыхания"># Знаки придыхания</a></h3>
-            <p>
-                В церковнославянском языке, по образцу греческого, над начальной гласной ставится придыхание (только тонкое; густого нет): ѻ҆ц҃ъ, и҆мѣ́нїе. Придыхание может стоять вместе с ударением, острым или тяжелым: (  ҆́) исо и (  ҆̀) апостроф: ꙗ҆́кѡ, ѧ҆̀.
-            </p>
+            <h3 class="ui header">Буквы, вышедшие из употребления:</h3>
+            <div class="ui bulleted list church-slavonic">
+                <div class="item"><span class="csf">Ѫ</span>, <span class="csf">ѫ</span> — юс большой</div>
+                <div class="item"><span class="csf">Ѭ</span>, <span class="csf">ѭ</span> — юс большой йотированный</div>
+                <div class="item"><span class="csf">Ѩ</span>, <span class="csf">ѩ</span> — юс малый йотированный</div>
+            </div>
+            <div class="ui message">
+                <div class="header" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;">Примечание</div>
+                <p>Юс большой (<span class="csf">ѫ</span>) употребляется только в ключе границ Пасхалии, для обозначения празднования Пасхи 24 апреля; юс малый (<span class="csf">ѧ</span>) хотя и употребляется, но является лишь разновидностью <span class="csf">ꙗ</span></p>
+            </div>
 
-            <!-- https://www.ponomar.net/files/gama2/p003.htm -->
-            <h3><a id="знаки_титла" href="#знаки_титла"># Знаки титла</a></h3>
-            <p>
-Некоторые слова в церковнославянском языке намеренно сокращаются, или пишутся с пропуском букв, вместо которых над словом ставится или простой знак (  ҃), или знак с какой-либо из пропущенных букв (  ⷭ҇ ). Такие знаки называются титлами.<br>
-Первый знак называется «простым титлом», второй знак — «буквенным титлом». Под титлом подписываются, обычно, следующие буквы: с, г, д, о, р, по которым и буквенные титла называются: «слово-титло», «глаголь-титло», «добро-титло», «он-титло», «рцы-титло».
-            <p style="font-size: 14px;"><b>Примечание.</b> Не всякое слово пишется под титлом, но только слова, обозначающие предметы особо уважаемые и почитаемые, например: гдⷭ҇ь, а҆́гг҃лъ, бг҃ъ (но а҆́гглъ — злой дух, бо́гъ — идол), или же слова, часто встречающиеся в речи, например: гл҃го́ла, чл҃вѣ́къ.</p>
+            <h3 class="ui header">По-разному пишутся, но одинаково произносятся следующие буквы и сочетания букв:</h3>
+            <div class="ui ordered list csf" style="font-size: 20px;">
+                <div class="item">в ѵ</div>
+                <div class="item">Е е є</div>
+                <div class="item">Ѕ З</div>
+                <div class="item">и ї ѷ</div>
+                <div class="item">о ѻ ѡ ѽ</div>
+                <div class="item">ѹ ꙋ</div>
+                <div class="item">ф ѳ</div>
+                <div class="item">ѿ от</div>
+                <div class="item">ꙗ ѧ</div>
+                <div class="item">ѯ кс</div>
+                <div class="item">ѱ пс</div>
+            </div>
 
-            <p>Под титлом пишутся следующие слова:</p>
-                <table width=80% style="border: none;">
-                <tr></tr>
-                <tr><td><span class="DSText">А҆́гг҃лъ</span> &mdash; ангел</td><td><span class="DSText">Мл҃тва</span> &mdash; молитва</td></td></tr>
-                <tr><td><span class="DSText">А҆пⷭ҇лъ</span> &mdash; апостол</td><td><span class="DSText">Млⷭ҇ть</span> &mdash; милость</td></td></tr>
-                <tr><td><span class="DSText">Бг҃ъ</span> &mdash; Бог</td><td><span class="DSText">Млⷭ҇рдїе</span> &mdash; милосердие</td></td></tr>
-                <tr><td><span class="DSText">Бжⷭ҇твенный</span> &mdash; Божественный</td><td><span class="DSText">Млⷣнцъ</span> &mdash; Младенец</td></td></tr>
-                <tr><td><span class="DSText">Бл҃гъ</span> &mdash; благ</td><td><span class="DSText">Мч҃никъ</span> &mdash; мученик</td></td></tr>
-                <tr><td><span class="DSText">Бл҃же́нъ</span> &mdash; блажен</td><td><span class="DSText">Нб҃о</span> &mdash; Небо</td></td></tr>
-                <tr><td><span class="DSText">Бл҃гослове́нъ</span> &mdash; благословен</td><td><span class="DSText">Ѻ҆ц҃ъ</span> &mdash; Отец</td></td></tr>
-                <tr><td><span class="DSText">Бл҃гочⷭ҇тнѡ</span> &mdash; благочестно</td><td><span class="DSText">Нлⷣѧ</span> &mdash; неделя</td></td></tr>
-                <tr><td><span class="DSText">Блгⷣть</span> &mdash; благодать</td><td><span class="DSText">Првⷣникъ</span> &mdash; праведник</td></td></tr>
-                <tr><td><span class="DSText">Бцⷣа</span> &mdash; Богородица</td><td><span class="DSText">Прпⷣбенъ</span> &mdash; преподобен</td></td></tr>
-                <tr><td><span class="DSText">Воскрⷭ҇нїе</span> &mdash; воскресение</td><td><span class="DSText">Прⷭ҇то́лъ</span> &mdash; престол</td></td></tr>
-                <tr><td><span class="DSText">Влⷣка</span> &mdash; Владыка</td><td><span class="DSText">Прⷪ҇ро́къ</span> &mdash; пророк</td></td></tr>
-                <tr><td><span class="DSText">Влⷣчца</span> &mdash; Владычица</td><td><span class="DSText">Ст҃ъ</span> &mdash; свят</td></td></tr>
-                <tr><td><span class="DSText">Гдⷭ҇ь</span> &mdash; Господь</td><td><span class="DSText">Ст҃и́тель</span> &mdash; святитель</td></td></tr>
-                <tr><td><span class="DSText">Дв҃а</span> &mdash; Дева</td><td><span class="DSText">Сп҃съ</span> &mdash; Спас</td></td></tr>
-                <tr><td><span class="DSText">Дх҃ъ</span> &mdash; Дух</td><td><span class="DSText">Сн҃ъ</span> &mdash; Сын</td></td></tr>
-                <tr><td><span class="DSText">Е҆пⷭ҇копъ</span> &mdash; епископ</td><td><span class="DSText">Трⷪ҇ца</span> &mdash; Троица</td></td></tr>
-                <tr><td><span class="DSText">Е҆ѵⷢ҇лїе</span> &mdash; Евангелие</td><td><span class="DSText">Хрⷭ҇то́съ</span> &mdash; Христос</td></td></tr>
-                <tr><td><span class="DSText">И҆́м҃рекъ</span> &mdash; имярек</td><td><span class="DSText">Црⷭ҇тво</span> &mdash; царство</td></td></tr>
-                <tr><td><span class="DSText">І҆ерⷭ҇ли́мъ</span> &mdash; Иерусалим</td><td><span class="DSText">Цр҃ь</span> &mdash; Царь</td></td></tr>
-                <tr><td><span class="DSText">І҆и҃съ</span> &mdash; Иисус</td><td><span class="DSText">Цр҃ковь</span> &mdash; церковь</td></td></tr>
-                <tr><td><span class="DSText">Крⷭ҇тъ</span> &mdash; Крест</td><td><span class="DSText">чⷭ҇тны́й</span> &mdash; честный</td></td></tr>
-                <tr><td><span class="DSText">Крⷭ҇ти́тель</span> &mdash; Креститель</td><td><span class="DSText">чⷭ҇тый</span> &mdash; чистый</td></td></tr>
-                <tr><td><span class="DSText">Мр҃і́ѧ</span> &mdash; Мария</td><td>и др.</td></td></tr>
-                <tr><td><span class="DSText">Мт҃и</span> &mdash; Мати</td></td></tr>
-                </table>
+            <div class="ui message">
+                <p>Церковнославянский алфавит был создан на базе греческого. Этим объясняется наличие ряда букв (<span class="csf">ѳ, ѡ, ѯ, ѱ, ѵ</span>), избыточных для передачи славянской речи. Греческим влиянием объясняется и правило, согласно которому сочетание <span class="csf" style="font-size: 18px;">ГГ</span> читается как [нг], а сочетание <span class="csf" style="font-size: 18px;">ГК</span> - как [нк], например: <span class="csf" style="font-size: 18px;">є҆ѵа́ггелїе</span>, <span class="csf" style="font-size: 18px;">сѷгкли́тъ</span>.</p>
+            </div>
+        </div>
 
-                <p>На иконах:<br>
-                    мр҃ ѳу҃ (Μήτηρ τοῦ Θεοῦ) — мт҃и бж҃їѧ (Матерь Божия)<br>
-                    а нимбе у Спасителя — ѻ҆ ѡ҆́н (ὁ ὢν) — сы́й (Сущий).<br>
+        <div class="ui segment" id="надстрочные_знаки_и_знаки_препинания">
+            <h2 class="ui header">Надстрочные знаки и знаки препинания</h2>
+            <div class="ui divider"></div>
+            
+            <p>В церковнославянском языке используются особые знаки, которые ставятся выше уровня строки и называется надстрочными. Это знаки ударения, особый знак придыхания и знаки сокращения слова.</p>
+            
+            <h3 class="ui header" id="знаки_ударения">Знаки ударения</h3>
+            <div class="ui text container">
+                <p>В церковнославянском языке ударение ставится во всех словах за исключением союзов, частиц, большинства предлогов, некоторых форм местоимений (ми, ти, си и др.).</p>
+                <p>Ударения бывают: острое (<span class="csf">  ́</span>) (или оксия), тяжелое (<span class="csf">  ̀</span>) (или вария) и облеченное (<span class="csf">  ̑</span>) (или камора). Острое ударение ставится над гласной в начале или середине слова: <span class="csf">а҆на́нїѧ</span>, <span class="csf">а҆́гг҃лъ</span>. Тяжелое — ставится над гласной в конце слова: <span class="csf">распнѝ є҆го̀</span>; но если после слова, оканчивающегося гласной, стоят союзы: же, бо, ли и краткие формы личного местоимения 1-го и 2-го лица: мѝ, тѝ и др., то ставится ударение острое, а местоимение без ударения: <span class="csf">спаси́ мѧ</span>.</p>
+                <p>Есть несколько местоимений, в которых над гласной, стоящей в начале слова, ставится тяжелое ударение вместе с придыханием для отличия падежей, например: <span class="csf">и҆̀же</span>, <span class="csf">ꙗ҆̀же</span> и др., и союз <span class="csf">ᲂу҆̀бо</span>.</p>
+                <p>Облеченное ударение ставится над падежами двойственного и множественного числа, сходными с падежами числа единственного, например: <span class="csf">ра́бъ</span> единственного числа и <span class="csf">ра̑бъ</span> множественного.</p>
+            </div>
+            
+            <h3 class="ui header" id="знаки_придыхания">Знаки придыхания</h3>
+            <div class="ui text container church-slavonic">
+                <p>В церковнославянском языке, по образцу греческого, над начальной гласной ставится придыхание (только тонкое; густого нет): <span class="csf">ѻ҆ц҃ъ</span>, <span class="csf">и҆мѣ́нїе</span>. Придыхание может стоять вместе с ударением, острым или тяжелым: (<span class="csf">  ҆́</span>) исо и (<span class="csf">  ҆̀</span>) апостроф: <span class="csf">ꙗ҆́кѡ</span>, <span class="csf">ѧ҆̀</span>.</p>
+            </div>
+            
+            <h3 class="ui header" id="знаки_титла">Знаки титла</h3>
+            <div class="ui text container church-slavonic">
+                <p>Некоторые слова в церковнославянском языке намеренно сокращаются, или пишутся с пропуском букв, вместо которых над словом ставится или простой знак (<span class="csf">  ҃</span>), или знак с какой-либо из пропущенных букв (<span class="csf">  ⷭ҇ </span>). Такие знаки называются титлами.</p>
+                <p>Первый знак называется «простым титлом», второй знак — «буквенным титлом». Под титлом подписываются, обычно, следующие буквы: <span class="csf">с</span>, <span class="csf">г</span>, <span class="csf">д</span>, <span class="csf">о</span>, <span class="csf">р</span>, по которым и буквенные титла называются: «слово-титло», «глаголь-титло», «добро-титло», «он-титло», «рцы-титло».</p>
+            </div>
+
+            <div class="ui message">
+                <div class="header" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;">Примечание</div>
+                <p>Не всякое слово пишется под титлом, но только слова, обозначающие предметы особо уважаемые и почитаемые, например: <span class="csf">гдⷭ҇ь</span>, <span class="csf">а҆́гг҃лъ</span>, <span class="csf">бг҃ъ</span> (но <span class="csf">а҆́гглъ</span> — злой дух, <span class="csf">бо́гъ</span> — идол), или же слова, часто встречающиеся в речи, например: <span class="csf">гл҃го́ла</span>, <span class="csf">чл҃вѣ́къ</span>.</p>
+            </div>
+
+            <h4 class="ui header">Под титлом пишутся следующие слова:</h4>
+            <table class="ui celled table" style="font-size: 20px;">
+                <tbody class="csf">
+                    <tr>
+                        <td>А҆́гг҃лъ — <span class="tf">ангел</span></td>
+                        <td>Мл҃тва — <span class="tf">молитва</span></td>
+                    </tr>
+                    <tr>
+                        <td>А҆пⷭ҇лъ — <span class="tf">апостол</span></td>
+                        <td>Млⷭ҇ть — <span class="tf">милость</span></td>
+                    </tr>
+                    <tr>
+                        <td>Бг҃ъ — <span class="tf">Бог</span></td>
+                        <td>Млⷭ҇рдїе — <span class="tf">милосердие</span></td>
+                    </tr>
+                    <tr>
+                        <td>Бжⷭ҇твенный — <span class="tf">Божественный</span></td>
+                        <td>Млⷣнцъ — <span class="tf">Младенец</span></td>
+                    </tr>
+                    <tr>
+                        <td>Бл҃гъ — <span class="tf">благ</span></td>
+                        <td>Мч҃никъ — <span class="tf">мученик</span></td>
+                    </tr>
+                    <tr>
+                        <td>Бл҃же́нъ — <span class="tf">блажен</span></td>
+                        <td>Нб҃о — <span class="tf">Небо</span></td>
+                    </tr>
+                    <tr>
+                        <td>Бл҃гослове́нъ — <span class="tf">благословен</span></td>
+                        <td>Ѻ҆ц҃ъ — <span class="tf">Отец</span></td>
+                    </tr>
+                    <tr>
+                        <td>Бл҃гочⷭ҇тнѡ — <span class="tf">благочестно</span></td>
+                        <td>Нлⷣѧ — <span class="tf">неделя</span></td>
+                    </tr>
+                    <tr>
+                        <td>Блгⷣть — <span class="tf">благодать</span></td>
+                        <td>Првⷣникъ — <span class="tf">праведник</span></td>
+                    </tr>
+                    <tr>
+                        <td>Бцⷣа — <span class="tf">Богородица</span></td>
+                        <td>Прпⷣбенъ — <span class="tf">преподобен</span></td>
+                    </tr>
+                    <tr>
+                        <td>Воскрⷭ҇нїе — <span class="tf">воскресение</span></td>
+                        <td>Прⷭ҇то́лъ — <span class="tf">престол</span></td>
+                    </tr>
+                    <tr>
+                        <td>Влⷣка — <span class="tf">Владыка</span></td>
+                        <td>Прⷪ҇ро́къ — <span class="tf">пророк</span></td>
+                    </tr>
+                    <tr>
+                        <td>Влⷣчца — <span class="tf">Владычица</span></td>
+                        <td>Ст҃ъ — <span class="tf">свят</span></td>
+                    </tr>
+                    <tr>
+                        <td>Гдⷭ҇ь — <span class="tf">Господь</span></td>
+                        <td>Ст҃и́тель — <span class="tf">святитель</span></td>
+                    </tr>
+                    <tr>
+                        <td>Дв҃а — <span class="tf">Дева</span></td>
+                        <td>Сп҃съ — <span class="tf">Спас</span></td>
+                    </tr>
+                    <tr>
+                        <td>Дх҃ъ — <span class="tf">Дух</span></td>
+                        <td>Сн҃ъ — <span class="tf">Сын</span></td>
+                    </tr>
+                    <tr>
+                        <td>Е҆пⷭ҇копъ — <span class="tf">епископ</span></td>
+                        <td>Трⷪ҇ца — <span class="tf">Троица</span></td>
+                    </tr>
+                    <tr>
+                        <td>Е҆ѵⷢ҇лїе — <span class="tf">Евангелие</span></td>
+                        <td>Хрⷭ҇то́съ — <span class="tf">Христос</span></td>
+                    </tr>
+                    <tr>
+                        <td>И҆́м҃рекъ — <span class="tf">имярек</span></td>
+                        <td>Црⷭ҇тво — <span class="tf">царство</span></td>
+                    </tr>
+                    <tr>
+                        <td>І҆ерⷭ҇ли́мъ — <span class="tf">Иерусалим</span></td>
+                        <td>Цр҃ь — <span class="tf">Царь</span></td>
+                    </tr>
+                    <tr>
+                        <td>І҆и҃съ — <span class="tf">Иисус</span></td>
+                        <td>Цр҃ковь — <span class="tf">церковь</span></td>
+                    </tr>
+                    <tr>
+                        <td>Крⷭ҇тъ — <span class="tf">Крест</span></td>
+                        <td>чⷭ҇тны́й — <span class="tf">честный</span></td>
+                    </tr>
+                    <tr>
+                        <td>Крⷭ҇ти́тель — <span class="tf">Креститель</span></td>
+                        <td>чⷭ҇тый — <span class="tf">чистый</span></td>
+                    </tr>
+                    <tr>
+                        <td>Мр҃і́ѧ — <span class="tf">Мария</span></td>
+                        <td class="tf">и др.</td>
+                    </tr>
+                    <tr>
+                        <td>Мт҃и — <span class="tf">Мати</span></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="ui message">
+                <p>На иконах:</p>
+                <p class="church-slavonic">
+                    <span class="csf" style="font-size: 18px;">мр҃ ѳу҃ (Μήτηρ τοῦ Θεοῦ)</span> — <span class="csf" style="font-size: 18px;">мт҃и бж҃їѧ</span> (Матерь Божия)<br>
+                    а нимбе у Спасителя — <span class="csf" style="font-size: 18px;"> ѻ҆ ѡ҆́н</span> (<span class="csf" style="font-size: 18px;">ὁ ὢν</span>) — <span class="csf">сы́й</span> (Сущий).
                 </p>
-            </p>
+            </div>
 
-            <!-- http://rahny-orthodox.org/files/CS.pdf -->
-            <h3><a id="знаки_препинания" href="#знаки_препинания"># Знаки препинания</a></h3>
-            <p>
-                <ul>
-                    <li>
-                        Точка с запятой в церковнославянском языке указывает на вопросительную интонацию, т.е.
-                        выполняет те же функции, что и знак вопроса в современном русском языке: маловѣ́ре, почто̀ ᲂу҆сꙋмнѣ́лсѧ є҆сѝ; – Маловерный, почему ты усомнился?
-                    </li>
-                    <li>
-                        В богослужебных книгах вместо часто повторяющихся молитв и возгласов приводятся только
-первые слова. Так, вместо возгласа Сла́ва ѻ҆ц҃ꙋ̀ и҆ сн҃ꙋ и҆ ст҃о́мꙋ дх҃ꙋ и҆ ны́нѣ и҆ на при́снѡ и҆ во вѣ́ки вѣкѡ́въ, а҆м́инь приводятся слова Сла́ва, и҆ ны́нѣ: При этом
-вместо многоточия ставится двоеточие. Если в богослужебной книге написано Ѻ҆́ч҃е на́шъ: то в
-этом месте целиком читается молитва Отче наш.
-                    </li>
-                    <li>
-Мы видели, что в церковнославянском языке знак <;> (точка с запятой) соответствует
+            <h3 class="ui header" id="знаки_препинания">Знаки препинания</h3>
+            <div class="ui bulleted list">
+                <div class="item">
+                    Точка с запятой в церковнославянском языке указывает на вопросительную интонацию, т.е.
+                    выполняет те же функции, что и знак вопроса в современном русском языке: <span class="csf" style="font-size: 18px;">маловѣ́ре, почто̀ ᲂу҆сꙋмнѣ́лсѧ є҆сѝ;</span> – Маловерный, почему ты усомнился?
+                </div>
+                <div class="item">
+                    В богослужебных книгах вместо часто повторяющихся молитв и возгласов приводятся только
+первые слова. Так, вместо возгласа <span class="csf" style="font-size: 18px;">Сла́ва ѻ҆ц҃ꙋ̀ и҆ сн҃ꙋ и҆ ст҃о́мꙋ дх҃ꙋ и҆ ны́нѣ и҆ на при́снѡ и҆ во вѣ́ки вѣкѡ́въ, а҆м́инь</span> приводятся слова <span class="csf" style="font-size: 18px;">Сла́ва, и҆ ны́нѣ:</span> При этом
+вместо многоточия ставится двоеточие.
+                </div>
+                <div class="item">
+                    В церковнославянском языке знак <<span class="csf">;</span>> (точка с запятой) соответствует
 вопросительному знаку современного русского языка. В функции точки с запятой в
 церковнославянском языке выступает точка, которая в этом случае называется малой точкой.
 По размеру она ничем не отличается от обычной точки, однако после нее предложение
 продолжается с маленькой буквы.
-                    </li>
-                    <li>
-                        Строгих правил постановки запятых в церковнославянском языке нет. Но запятые, как и в
+                </div>
+                <div class="item">
+                    Строгих правил постановки запятых в церковнославянском языке нет. Но запятые, как и в
 современном русском языке, помогают понять членение предложения и выделить его основные
 части.
-                    </li>
-                </ul>
-            </p>
+                </div>
+            </div>
         </div>
 
-        <!-- https://www.ponomar.net/files/gama2/p005.htm -->
-        <h1><a id="цифровые_значения_букв" href="#цифровые_значения_букв"># Цифровые значения букв</a></h1>
-        <hr>
-        <p>
-            В церковнославянских текстах не употребляются арабские и латинские цифры. Вместо них используется цифирь — система записи чисел с помощью букв церковнославянского алфавита, имеющих числовые значения. В этом случае над буквой ставится знак титла.<br>
-<table>
-    <tr>
-        <td>а҃ — 1</td>
-        <td>в҃ — 2</td>
-        <td>г҃ — 3</td>
-        <td>д҃ — 4</td>
-        <td>є҃ — 5</td>
-        <td>ѕ҃ — 6</td>
-        <td>з҃ — 7</td>
-        <td>и҃ — 8</td>
-        <td>ѳ҃ — 9</td>
-        <td>і҃ — 10</td>
-        <td>а҃і — 11</td>
-        <td>в҃і — 12</td>
-        <td>г҃і — 13</td>
-        <td>д҃і — 14</td>
-    </tr>
-    <tr>
-        <td>є҃і — 15</td>
-        <td>ѕ҃і — 16</td>
-        <td>з҃і — 17</td>
-        <td>и҃і — 18</td>
-        <td>ѳ҃і — 19</td>
-        <td>к҃ — 20</td>
-        <td>к҃а — 21</td>
-        <td>л҃ — 30</td>
-        <td>м҃ — 40</td>
-        <td>н҃ — 50</td>
-        <td>ѯ҃ — 60</td>
-        <td>ѻ҃ — 70</td>
-        <td>п҃ — 80</td>
-        <td>ч҃ — 90</td>
-    </tr>
-    <tr>
-        <td>р҃ — 100</td>
-        <td>с҃ — 200</td>
-        <td>т҃ — 300</td>
-        <td>у҃ — 400</td>
-        <td>ф҃ — 500</td>
-        <td>х҃ — 600</td>
-        <td>ѱ҃ — 700</td>
-        <td>ѿ — 800</td>
-        <td>ц҃ — 900</td>
-        <td>҂а҃ — 1000</td>
-        <td>҂в҃ — 2000</td>
-        <td>҂ацѯ҃д — 1964</td>
-        <td>҂зуѻ҃в — 7472</td>
-        <td>҂р҃ — 100 000</td>
-        <td>҂҂а҃ — 1 000 000</td>
-    </tr>
-</table>
-<p>Славянские числа кириллицы взяты из греческого языка, а потому следуют порядку греческого алфавита. В глаголице числа следовали порядку глаголического алфавита.</p>
-Большие числа имели еще особые начертания и названия, но в настоящее время они уже вышли из употребления, впрочем, некоторые названия сохранились:<br>
-а⃝ — тма̀ (10 000),<br>
-а҈ — легеѡ́нъ или несвѣ́дь (100 000),<br>
-а҉ — леѡ́дръ (1 000 000),<br>
-а꙰ — вра́нъ (10 леодр),<br>
-а꙱ — коло́да (10 вран),<br>
-ы꙲ — тма̀ те́мъ (10 колод).<br>
-        </p>
+        <div class="ui segment" id="цифровые_значения_букв">
+            <h2 class="ui header">Цифровые значения букв</h2>
+            <div class="ui divider"></div>
+            
+            <p>
+                В церковнославянских текстах не употребляются арабские и латинские цифры. Вместо них используется цифирь — система записи чисел с помощью букв церковнославянского алфавита, имеющих числовые значения. В этом случае над буквой ставится знак титла.
+            </p>
+            
+            <table class="ui celled table">
+                <tbody class="csf" style="font-size: 20px;">
+                    <tr>
+                        <td>а҃  1</td>
+                        <td>в҃  2</td>
+                        <td>г҃  3</td>
+                        <td>д҃  4</td>
+                        <td>є҃  5</td>
+                        <td>ѕ҃  6</td>
+                        <td>з҃  7</td>
+                        <td>и҃  8</td>
+                        <td>ѳ҃  9</td>
+                        <td>і҃  10</td>
+                        <td>а҃і  11</td>
+                        <td>в҃і  12</td>
+                        <td>г҃і  13</td>
+                        <td>д҃і  14</td>
+                    </tr>
+                    <tr>
+                        <td>є҃і  15</td>
+                        <td>ѕ҃і  16</td>
+                        <td>з҃і  17</td>
+                        <td>и҃і  18</td>
+                        <td>ѳ҃і  19</td>
+                        <td>к҃  20</td>
+                        <td>к҃а  21</td>
+                        <td>л҃  30</td>
+                        <td>м҃  40</td>
+                        <td>н҃  50</td>
+                        <td>ѯ҃  60</td>
+                        <td>ѻ҃  70</td>
+                        <td>п҃  80</td>
+                        <td>ч҃  90</td>
+                    </tr>
+                    <tr>
+                        <td>р҃  100</td>
+                        <td>с҃  200</td>
+                        <td>т҃  300</td>
+                        <td>у҃  400</td>
+                        <td>ф҃  500</td>
+                        <td>х҃  600</td>
+                        <td>ѱ҃  700</td>
+                        <td>ѿ  800</td>
+                        <td>ц҃  900</td>
+                        <td>҂а҃  1000</td>
+                        <td>҂в҃  2000</td>
+                        <td>҂ацѯ҃д  1964</td>
+                        <td>҂зуѻ҃в 7472</td>
+                        <td>҂р҃  100 000</td>
+                        <td>҂҂а҃  1 000 000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Славянские числа кириллицы взяты из греческого языка, а потому следуют порядку греческого алфавита. В глаголице числа следовали порядку глаголического алфавита.</p>
+
+            <p>Большие числа имели еще особые начертания и названия, но в настоящее время они уже вышли из употребления, впрочем, некоторые названия сохранились:</p>
+            <div class="ui list csf" style="font-size: 20px;">
+                <div class="item">а⃝ — тма̀ (10 000)</div>
+                <div class="item">а҈ — легеѡ́нъ или несвѣ́дь (100 000)</div>
+                <div class="item">а҉ — леѡ́дръ (1 000 000)</div>
+                <div class="item">а꙰ — вра́нъ (10 леодр)</div>
+                <div class="item">а꙱ — коло́да (10 вран)</div>
+                <div class="item">ы꙲ — тма̀ те́мъ (10 колод)</div>
+            </div>
+        </div>
+
+        <div class="ui segment">
+            <p>
+                Для страницы использовалась информация из следующих источников:
+                <div class="ui list">
+                    <div class="item">
+                        <a href="https://www.ponomar.net/files/gama2/p001.htm">https://www.ponomar.net/files/gama2/p001.htm</a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.ponomar.net/files/gama2/p003.htm">https://www.ponomar.net/files/gama2/p003.htm</a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.ponomar.net/files/gama2/p005.htm">https://www.ponomar.net/files/gama2/p005.htm</a>
+                    </div>
+                    <div class="item">
+                        <a href="http://rahny-orthodox.org/files/CS.pdf">http://rahny-orthodox.org/files/CS.pdf</a>
+                    </div>
+                    <div class="item">
+                        <a href="https://ru.wikipedia.org/wiki/%D0%98%D0%B6%D0%B8%D1%86%D0%B0">https://ru.wikipedia.org/wiki/%D0%98%D0%B6%D0%B8%D1%86%D0%B0</a>
+                    </div>
+                </div>
+                Используется шрифт PonomarUnicode <a href="https://sci.ponomar.net/ru/fonts.html">https://sci.ponomar.net/ru/fonts.html</a>
+            </p>
+            <p>Информация предоставлена для обучения. &copy; eqozqq</p>
+        </div>
     </div>
 
-    <br><br>
-    <p style="font-family: Arial, Helvetica, sans-serif;">
-        Для страницы использовалась информация из следующих источников:
-        <cite><a href="https://www.ponomar.net/files/gama2/p001.htm">https://www.ponomar.net/files/gama2/p001.htm</a></cite>,
-        <cite><a href="https://www.ponomar.net/files/gama2/p003.htm">https://www.ponomar.net/files/gama2/p003.htm</a></cite>,
-        <cite><a href="https://www.ponomar.net/files/gama2/p005.htm">https://www.ponomar.net/files/gama2/p005.htm</a></cite>,
-        <cite><a href="http://rahny-orthodox.org/files/CS.pdf">http://rahny-orthodox.org/files/CS.pdf</a></cite>,
-        <cite><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%B6%D0%B8%D1%86%D0%B0">https://ru.wikipedia.org/wiki/%D0%98%D0%B6%D0%B8%D1%86%D0%B0</a></cite>.<br>
-        Используется шрифт PonomarUnicode <a href="https://sci.ponomar.net/ru/fonts.html">https://sci.ponomar.net/ru/fonts.html</a><br><br>
-        Информация предоставлена для обучения. &copy; eqozqq
-    </p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </body>
 </html>
